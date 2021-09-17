@@ -12,7 +12,7 @@ namespace ReceiptPrinter.Domain.Commodity.data
         public IEnumerable<Commodity> GetAll()
         {
             return new List<Commodity> {
-            new Commodity{CommodityId=1, Name="book",IsImported=false,Type=CommodityType.Book, Price=12.49M },
+            new Commodity{CommodityId=1,Name="book",IsImported=false,Type=CommodityType.Book, Price=12.49M },
             new Commodity{CommodityId=2,Name="music CD",IsImported=false,Type=CommodityType.Others, Price=14.99M },
             new Commodity{CommodityId=3,Name="chocolate bar",IsImported=false,Type=CommodityType.Food, Price=0.85M },
             new Commodity{CommodityId=4,Name="imported box of chocolates",IsImported=true,Type=CommodityType.Food, Price=10.00M },

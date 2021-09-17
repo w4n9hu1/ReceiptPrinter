@@ -56,6 +56,7 @@ namespace ReceiptPrinter.Domain.TaxCaculator
         public static decimal FormatTax(decimal tax)
         {
             var roundOff = 0.05M;
+            // C#默认的四舍六入五成双的舍入法
             return Math.Round(tax / roundOff, MidpointRounding.AwayFromZero) * roundOff;
         }
     }

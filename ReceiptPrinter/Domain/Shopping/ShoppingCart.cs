@@ -8,6 +8,9 @@ namespace ReceiptPrinter.Domain.Shopping
     /// </summary>
     public class ShoppingCart
     {
+        /// <summary>
+        /// 购物明细
+        /// </summary>
         public List<ShoppingDetail> ShoppingDetails { get; set; } = new List<ShoppingDetail>();
     }
 }

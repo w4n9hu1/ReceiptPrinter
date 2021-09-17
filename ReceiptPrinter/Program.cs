@@ -16,9 +16,9 @@ namespace ReceiptPrinter
             var shoppingCart = new ShoppingCart();
             var receipt = new Receipt { ShoppingCart = shoppingCart };
 
-            // mock bill
-            var buyarr = new[] { 1, 2, 3 };
-            foreach (var id in buyarr)
+            // mock shopping
+            var buyArr = new[] { 1, 2, 3 };
+            foreach (var id in buyArr)
             {
                 shoppingCart.ShoppingDetails.Add(new ShoppingDetail { Commodity = store.Get(id), Amount = 1 });
             }

@@ -9,6 +9,7 @@ namespace ReceiptPrinter.Domain.Commodity
     public class CommodityStore
     {
         private readonly ICommodityRepository _commodityRepository;
+
         public CommodityStore(ICommodityRepository commodityReosity)
         {
             _commodityRepository = commodityReosity;
